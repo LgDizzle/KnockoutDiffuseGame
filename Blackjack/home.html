@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Blackjack</title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/knockout-3.0.0.debug.js"></script>
+    <script src="Scripts/home.js"></script>
+</head>
+<body>
+    <h1><strong data-bind="text: gameName"></strong></h1>
+    <p>Player: <strong data-bind="text: playerName"></strong></p>
+    <p>Update Player Name: <input data-bind="value: playerName"/></p>
+<div>
+    <p>Player: <strong data-bind="text: fullName"></strong></p>
+</div>
+<div>
+    <p>Player Health: <strong data-bind="text: playerHealth"></strong></p>
+    <p>Enemy Health: <strong data-bind="text: enemyHealth"></strong></p>
+</div>
+<div>
+
+
+
+
+    <pre>
+         |\_/|
+         (`o`)     __(\_            |\_
+         \ ~ /_.-`` _|__)  ( ( ( ( /()/
+        _/`-`  _.-``               `\|
+     .-`      (    .-.
+    (   .-     \  /   `-._
+     \  (\_    /\/        `-.__-()
+      `-|__)__/ /  /``-.   /_____8
+            \__/  /     `-`
+           />|   /
+          /| |   |
+          `` |   |
+             L___J
+              ( |
+             .oO()
+    </pre>
+    
+    
+    <button data-bind="click: AttackButton">Attack!</button>
+    <button data-bind="click: PotionButton">Quick, Potion!</button>
+</div>
+</body>
+</html>

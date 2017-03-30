@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Don't Explode</title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/knockout-3.0.0.debug.js"></script>
+    <script src="Scripts/DontExplode.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+<br/>
+<table>
+    <thead>
+        <tr>
+        </tr>
+    </thead>    <tbody data-bind="foreach: hardWires">
+    <tr>
+        <!--<td data-bind="text: wire().wireColor"></td>-->
+        <td><button data-bind="click: cutWire, text: buttonText, enable: isEnabled"></button></td>
+    </tbody>
+</table>
+    <br/>
+<div>
+    <h2><b><u>On the Subject of Wires:</u></b></h2>
+</div>
+    <div><b><u>3 Wires:</u></b></div>
+<div>
+    <h4>
+        <pre>
+If there are no red wires, cut the second wire.
+Otherwise, if the last wire is white, cut the last wire.
+Otherwise, if there is more than one blue wire, cut the last blue wire.
+Otherwise, cut the last wire.
+        </pre>
+    </h4>
+</div>
+</body>
+</html>
